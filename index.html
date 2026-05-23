@@ -286,43 +286,45 @@
 
 
 <script>
-const API_KEY = "8fad02c21def4e9aa318140fb9c4ca43";
+const API_KEY = "b7fed2b175342851cdd13ce3294f4453";
 
 const query = encodeURIComponent(
-  'Trump OR "JD Vance" OR "Charlie Kirk" OR "2028 election" OR "Erika Kirk" OR "Republican Party" OR "Elon Musk"'
+  'Trump OR "JD Vance" OR "Charlie Kirk" OR "2028 election" OR "Erika Kirk" OR "Republican" OR "Elon Musk"'
 );
 
-fetch(`https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=6&apiKey=${API_KEY}`)
+fetch(`https://gnews.io/api/v4/search?q=${query}&lang=en&country=us&max=5&apikey=${API_KEY}`)
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById("news-feed");
 
     if (!data.articles || data.articles.length === 0) {
-      container.innerHTML = "<div class='news-item'>No news available.</div>";
+      container.innerHTML =
+        "<div class='floating-news-item'>No news available.</div>";
       return;
     }
 
     container.innerHTML = "";
 
     data.articles.forEach(article => {
-      const item = document.createElement("a");
+      const item = document.createElement("div");
+
       item.className = "floating-news-item";
-      item.href = article.url;
-      item.target = "_blank";
 
       item.innerHTML = `
-  <a href="${article.url}" target="_blank">
-    <h3>${article.title}</h3>
-    <p>${article.source.name}</p>
-  </a>
-`;
+        <a href="${article.url}" target="_blank">
+          <h3>${article.title}</h3>
+          <p>${article.source.name}</p>
+        </a>
+      `;
 
       container.appendChild(item);
     });
   })
-  .catch(() => {
+  .catch(error => {
+    console.log(error);
+
     document.getElementById("news-feed").innerHTML =
-      "<div class='news-item'>Failed to load headlines.</div>";
+      "<div class='floating-news-item'>Failed to load headlines.</div>";
   });
 </script>
 
