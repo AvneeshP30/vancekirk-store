@@ -286,42 +286,35 @@
 
 
 <script>
-const API_KEY = "b7fed2b175342851cdd13ce3294f4453";
+const rssUrl =
+  "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml";
 
-const query = encodeURIComponent(
-  'Trump OR "JD Vance" OR "Charlie Kirk" OR "2028 election" OR "Erika Kirk" OR "Republican" OR "Elon Musk"'
-);
-
-fetch(`https://gnews.io/api/v4/search?q=${query}&lang=en&country=us&max=5&apikey=${API_KEY}`)
-  .then(res => res.json())
-  .then(data => {
+fetch(
+  `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`
+)
+  .then((res) => res.json())
+  .then((data) => {
     const container = document.getElementById("news-feed");
-
-    if (!data.articles || data.articles.length === 0) {
-      container.innerHTML =
-        "<div class='floating-news-item'>No news available.</div>";
-      return;
-    }
 
     container.innerHTML = "";
 
-    data.articles.forEach(article => {
+    data.items.slice(0, 5).forEach((article) => {
       const item = document.createElement("div");
 
       item.className = "floating-news-item";
 
       item.innerHTML = `
-        <a href="${article.url}" target="_blank">
+        <a href="${article.link}" target="_blank">
           <h3>${article.title}</h3>
-          <p>${article.source.name}</p>
+          <p>${article.author || "Politics Feed"}</p>
         </a>
       `;
 
       container.appendChild(item);
     });
   })
-  .catch(error => {
-    console.log(error);
+  .catch((err) => {
+    console.log(err);
 
     document.getElementById("news-feed").innerHTML =
       "<div class='floating-news-item'>Failed to load headlines.</div>";
