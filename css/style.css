@@ -962,3 +962,32 @@ cite {
   .hero-stats { flex-direction: column; padding: 20px; }
   .stat-divider { width: 80px; height: 1px; }
 }
+.domain-sale {
+  text-align: center;
+  padding: 28px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #222;
+  background: linear-gradient(to right, #0a0a0a, #111, #0a0a0a);
+  font-size: 15px;
+  color: #cfcfcf;
+  letter-spacing: 0.5px;
+}
+
+.domain-sale a {
+  color: #ff2b2b;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 16px;
+  border: 1px solid #ff2b2b;
+  border-radius: 6px;
+  margin-left: 8px;
+  transition: all 0.25s ease;
+  display: inline-block;
+}
+
+.domain-sale a:hover {
+  background: #ff2b2b;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(255, 43, 43, 0.5);
+  transform: translateY(-2px);
+}
