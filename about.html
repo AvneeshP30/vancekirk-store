@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — VanceKirk Store 2028</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">VANCE<span>KIRK</span></a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="drops.html">Drops</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html" class="nav-cta">Buy Now</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="shop.html">Shop</a><a href="drops.html">Drops</a><a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="page-hero" style="background: var(--red);">
+    <h1>OUR MISSION</h1>
+    <p>Why we exist. What we stand for. Where we're going.</p>
+  </div>
+
+  <section class="about-content">
+    <div class="container about-grid">
+      <div class="about-body">
+        <p class="eyebrow">The VanceKirk Movement</p>
+        <h2>More Than Merch</h2>
+        <p>VanceKirk Store isn't just another political shop. It's the front line of a cultural movement — a place where everyday Americans can wear their values, fund their beliefs, and show the country what real patriotism looks like heading into 2028.</p>
+        <p>Every hoodie sold helps fund grassroots organizing. Every flag flying in a front yard is a vote for the future we're building together. Every digital kit downloaded helps volunteers knock on more doors, have more conversations, and win more hearts.</p>
+        <p>We believe in American-made goods, American values, and an American future that works for everyone who puts their hand on their heart and means it.</p>
+
+        <h2 style="margin-top:40px;">Our Values</h2>
+        <ul class="values-list">
+          <li><span>★</span> 100% of profits support campaign outreach</li>
+          <li><span>★</span> American-made products whenever possible</li>
+          <li><span>★</span> Ships within 3 business days — guaranteed</li>
+          <li><span>★</span> Every order includes a free sticker pack</li>
+          <li><span>★</span> Quality that outlasts the election cycle</li>
+          <li><span>★</span> Community first, commerce second</li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="background:var(--blue-dark); border-radius:12px; padding:48px; margin-bottom:32px; border: 2px solid var(--gold);">
+          <p style="font-family:var(--font-cond);font-size:14px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:16px;">Impact to Date</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+            <div style="text-align:center;background:rgba(0,0,0,0.3);border-radius:8px;padding:24px;">
+              <span style="font-family:var(--font-display);font-size:48px;color:var(--gold);display:block;">12K+</span>
+              <span style="font-family:var(--font-cond);font-size:14px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;">Orders Shipped</span>
+            </div>
+            <div style="text-align:center;background:rgba(0,0,0,0.3);border-radius:8px;padding:24px;">
+              <span style="font-family:var(--font-display);font-size:48px;color:var(--gold);display:block;">48</span>
+              <span style="font-family:var(--font-cond);font-size:14px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;">States Reached</span>
+            </div>
+            <div style="text-align:center;background:rgba(0,0,0,0.3);border-radius:8px;padding:24px;">
+              <span style="font-family:var(--font-display);font-size:48px;color:var(--gold);display:block;">$218K</span>
+              <span style="font-family:var(--font-cond);font-size:14px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;">Raised for Outreach</span>
+            </div>
+            <div style="text-align:center;background:rgba(0,0,0,0.3);border-radius:8px;padding:24px;">
+              <span style="font-family:var(--font-display);font-size:48px;color:var(--gold);display:block;">4</span>
+              <span style="font-family:var(--font-cond);font-size:14px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase;">Sold-Out Drops</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--gray);border-radius:12px;padding:40px;">
+          <p style="font-family:var(--font-cond);font-size:14px;letter-spacing:4px;color:var(--red);text-transform:uppercase;margin-bottom:16px;">Legal Disclosure</p>
+          <p style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.8;">VanceKirk Store operates as an independent merchandise operation in support of VanceKirk 2028. This store is not an official campaign committee. All purchases are voluntary consumer transactions. Merchandise proceeds are used to fund independent advocacy and outreach activities. Please consult FEC guidelines regarding campaign contributions in your state.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-section">
+    <div class="container newsletter-inner">
+      <h2>Join the Movement</h2>
+      <p>Campaign news, early drop access, rally updates — all in one email.</p>
+      <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit">Sign Me Up</button>
+      </form>
+      <p class="nl-fine">No spam. We respect your inbox.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">VANCE<span>KIRK</span></a>
+        <p>Making America proud, one drop at a time.</p>
+        <div class="socials">
+          <a href="#">𝕏</a><a href="#">IG</a><a href="#">TK</a><a href="#">TS</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="shop.html">All Products</a><a href="drops.html">Exclusive Drops</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="about.html">About</a><a href="#">Shipping</a><a href="#">Returns</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclosures</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2028 VanceKirk Store. Not affiliated with official campaign. Paid for by independent supporters.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

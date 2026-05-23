@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — VanceKirk Store 2028</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">VANCE<span>KIRK</span></a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="drops.html">Drops</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html" class="nav-cta">Buy Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="shop.html">Shop</a>
+      <a href="drops.html">Drops</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <h1>THE STORE</h1>
+    <p>American-made gear for the American movement.</p>
+  </div>
+
+  <div class="filters-bar">
+    <div class="filters-inner">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="apparel">Apparel</button>
+      <button class="filter-btn" data-filter="accessories">Accessories</button>
+      <button class="filter-btn" data-filter="drops">Limited Drops</button>
+      <button class="filter-btn" data-filter="digital">Digital</button>
+    </div>
+  </div>
+
+  <section class="shop-grid-section">
+    <div class="container">
+      <div class="shop-grid">
+
+        <div class="product-card" data-cat="apparel">
+          <div class="product-img img-tee"><span class="badge badge-hot">HOT</span></div>
+          <div class="product-info">
+            <h4>VanceKirk '28 Classic Tee</h4>
+            <p class="product-desc">Heavyweight 100% cotton. Screen printed flag graphic front and back.</p>
+            <div class="product-footer">
+              <span class="price">$34.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="apparel">
+          <div class="product-img img-hoodie"><span class="badge badge-new">NEW</span></div>
+          <div class="product-info">
+            <h4>Red Wave Pullover Hoodie</h4>
+            <p class="product-desc">Heavy fleece. Embroidered chest logo. Limited run of 500.</p>
+            <div class="product-footer">
+              <span class="price">$69.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="apparel">
+          <div class="product-img img-hat"><span class="badge badge-sold">ALMOST GONE</span></div>
+          <div class="product-info">
+            <h4>America First Snapback</h4>
+            <p class="product-desc">Structured 6-panel. Embroidered logo. Adjustable strap. One size.</p>
+            <div class="product-footer">
+              <span class="price">$29.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="apparel">
+          <div class="product-img" style="background:linear-gradient(135deg,#003399,#001166)">
+            <span style="font-size:72px">🧤</span>
+          </div>
+          <div class="product-info">
+            <h4>Rally Bomber Jacket</h4>
+            <p class="product-desc">Satin finish. Embroidered back panel. Stars & stripes lining.</p>
+            <div class="product-footer">
+              <span class="price">$119.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="accessories">
+          <div class="product-img img-flag"></div>
+          <div class="product-info">
+            <h4>VanceKirk Flag Bundle</h4>
+            <p class="product-desc">3x5 outdoor flag + 5-pack bumper stickers. Weather-resistant.</p>
+            <div class="product-footer">
+              <span class="price">$24.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="accessories">
+          <div class="product-img" style="background:linear-gradient(135deg,#222,#444)">
+            <span style="font-size:72px">📌</span>
+          </div>
+          <div class="product-info">
+            <h4>Enamel Pin Set (5-Pack)</h4>
+            <p class="product-desc">Hard enamel. Gold plated metal backing. Iconic designs.</p>
+            <div class="product-footer">
+              <span class="price">$19.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="accessories">
+          <div class="product-img" style="background:linear-gradient(135deg,#CC0000,#880000)">
+            <span style="font-size:72px">🪧</span>
+          </div>
+          <div class="product-info">
+            <h4>Yard Sign 2-Pack</h4>
+            <p class="product-desc">18x24" corrugated. Metal H-stake included. Weather-resistant.</p>
+            <div class="product-footer">
+              <span class="price">$18.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="drops">
+          <div class="product-img" style="background:linear-gradient(135deg,#1a1a1a,#333); border-bottom:3px solid gold">
+            <span style="font-size:72px">🦅</span>
+            <span class="badge badge-hot">DROP</span>
+          </div>
+          <div class="product-info">
+            <h4>Eagle Edition Bomber</h4>
+            <p class="product-desc">100 units only. Hand-embroidered eagle. American leather exterior.</p>
+            <div class="product-footer">
+              <span class="price">$249.99</span>
+              <a href="drops.html" class="add-btn">Join Waitlist</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="digital">
+          <div class="product-img" style="background:linear-gradient(135deg,#004400,#002200)">
+            <span style="font-size:72px">🖼️</span>
+          </div>
+          <div class="product-info">
+            <h4>Digital Wallpaper Pack</h4>
+            <p class="product-desc">20 HD wallpapers. Phone + desktop sizes. Instant download.</p>
+            <div class="product-footer">
+              <span class="price">$4.99</span>
+              <a href="#" class="add-btn">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="digital">
+          <div class="product-img" style="background:linear-gradient(135deg,#003399,#001166)">
+            <span style="font-size:72px">📋</span>
+          </div>
+          <div class="product-info">
+            <h4>Printable Canvassing Kit</h4>
+            <p class="product-desc">Door hanger templates, talking points, sign-up sheets. PDF bundle.</p>
+            <div class="product-footer">
+              <span class="price">$9.99</span>
+              <a href="#" class="add-btn">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="digital">
+          <div class="product-img" style="background:linear-gradient(135deg,#440000,#220000)">
+            <span style="font-size:72px">🎨</span>
+          </div>
+          <div class="product-info">
+            <h4>Social Media Graphics Kit</h4>
+            <p class="product-desc">50+ Instagram, X & Facebook post templates. Editable Canva files.</p>
+            <div class="product-footer">
+              <span class="price">$14.99</span>
+              <a href="#" class="add-btn">Download</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="apparel">
+          <div class="product-img" style="background:linear-gradient(135deg,#CC0000,#003399)">
+            <span style="font-size:72px">👟</span>
+            <span class="badge badge-new">NEW</span>
+          </div>
+          <div class="product-info">
+            <h4>Rally Day Tote Bag</h4>
+            <p class="product-desc">Heavy canvas. Bold front print. Double-stitched handles.</p>
+            <div class="product-footer">
+              <span class="price">$22.99</span>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">VANCE<span>KIRK</span></a>
+        <p>Making America proud, one drop at a time.</p>
+        <div class="socials">
+          <a href="#">𝕏</a><a href="#">IG</a><a href="#">TK</a><a href="#">TS</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="shop.html">All Products</a>
+        <a href="drops.html">Exclusive Drops</a>
+        <a href="#">Apparel</a><a href="#">Accessories</a><a href="#">Digital</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="about.html">About</a><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Campaign Disclosures</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2028 VanceKirk Store. Not affiliated with official campaign.</p>
+    </div>
+  </footer>
+
+  <div class="cart-toast" id="cartToast">✓ Added to cart!</div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusive Drops — VanceKirk Store 2028</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">VANCE<span>KIRK</span></a>
+      <ul class="nav-links">
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="drops.html">Drops</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html" class="nav-cta">Buy Now</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="shop.html">Shop</a><a href="drops.html">Drops</a><a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <h1>DROPS</h1>
+    <p>Limited runs. Bold pieces. First come, first served. No restocks.</p>
+  </div>
+
+  <div class="ticker">
+    <div class="ticker-inner">
+      <span>🔥 NEXT DROP: EAGLE EDITION BOMBER — 12 DAYS &nbsp;</span>
+      <span>★ 100 UNITS ONLY &nbsp;</span>
+      <span>🔥 NEXT DROP: EAGLE EDITION BOMBER — 12 DAYS &nbsp;</span>
+      <span>★ 100 UNITS ONLY &nbsp;</span>
+    </div>
+  </div>
+
+  <section class="section" style="background: var(--near-black);">
+    <div class="container">
+
+      <!-- FEATURED DROP -->
+      <div style="background: var(--blue-dark); border: 3px solid var(--gold); border-radius: 12px; padding: 48px; margin-bottom: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+        <div style="text-align:center; background: rgba(0,0,0,0.3); border-radius: 8px; padding: 60px 40px; font-size: 100px; position:relative;">
+          🦅
+          <div style="position:absolute; top:16px; left:16px; background:var(--gold); color:var(--near-black); font-family:var(--font-cond); font-size:13px; font-weight:900; letter-spacing:2px; padding:6px 14px; border-radius:4px;">FEATURED DROP</div>
+        </div>
+        <div>
+          <p style="font-family:var(--font-cond); font-size:14px; letter-spacing:4px; color:var(--gold); text-transform:uppercase; margin-bottom:8px;">Drop #004 — Limited to 100 Units</p>
+          <h2 style="font-family:var(--font-display); font-size:60px; letter-spacing:3px; color:var(--white); margin-bottom:16px; line-height:1;">Eagle Edition Bomber Jacket</h2>
+          <p style="color:rgba(255,255,255,0.7); margin-bottom:24px; line-height:1.8;">Hand-embroidered American bald eagle on back. Real American leather exterior. Silk satin lining with flag pattern. Numbered certificate of authenticity with every unit.</p>
+          <p style="font-family:var(--font-display); font-size:48px; color:var(--gold); margin-bottom:8px;">$249.99</p>
+          <p style="font-family:var(--font-cond); font-size:14px; color:rgba(255,255,255,0.5); margin-bottom:24px;">Free priority shipping included</p>
+          <p style="font-family:var(--font-cond); font-size:14px; letter-spacing:2px; color:var(--gold); margin-bottom:12px;">DROP COUNTDOWN:</p>
+          <div class="countdown" id="countdown" style="margin-bottom:28px;">
+            <div class="cd-block"><span id="cd-days">12</span><label>Days</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block"><span id="cd-hours">06</span><label>Hours</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block"><span id="cd-mins">00</span><label>Mins</label></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-block"><span id="cd-secs">00</span><label>Secs</label></div>
+          </div>
+          <a href="#" class="btn btn-primary" style="margin-right:12px;">Join Waitlist</a>
+          <a href="#" class="btn btn-outline">Set Reminder</a>
+        </div>
+      </div>
+
+      <!-- PAST & UPCOMING DROPS -->
+      <h2 class="section-title">All Drops</h2>
+      <div class="drop-grid">
+
+        <div class="drop-card">
+          <div class="drop-card-img" style="background:linear-gradient(135deg,#003399,#001166)">
+            <span style="font-size:80px">🎽</span>
+            <span class="badge badge-hot" style="position:absolute;top:16px;left:16px;">LIVE NOW</span>
+          </div>
+          <div class="drop-card-info">
+            <p class="drop-status status-live">● LIVE NOW</p>
+            <h3>Red Wave Hoodie</h3>
+            <p>Heavyweight fleece. Embroidered chest. Flag sleeve patch. 500 units only.</p>
+            <div class="drop-meta">
+              <span class="drop-units">142 / 500 remaining</span>
+              <span style="font-family:var(--font-display);font-size:28px;color:var(--gold);">$69.99</span>
+            </div>
+            <div style="margin-top:16px;"><a href="#" class="btn btn-primary" style="font-size:16px;padding:12px 28px;">Buy Now</a></div>
+          </div>
+        </div>
+
+        <div class="drop-card">
+          <div class="drop-card-img" style="background:linear-gradient(135deg,#1a1a1a,#333);border-bottom:3px solid var(--gold)">
+            <span style="font-size:80px">🦅</span>
+          </div>
+          <div class="drop-card-info">
+            <p class="drop-status status-coming">◐ COMING SOON</p>
+            <h3>Eagle Edition Bomber</h3>
+            <p>The flagship piece. 100 units. Hand-embroidered. American leather.</p>
+            <div class="drop-meta">
+              <span class="drop-units">Drops in 12 days</span>
+              <span style="font-family:var(--font-display);font-size:28px;color:var(--gold);">$249.99</span>
+            </div>
+            <div style="margin-top:16px;"><a href="#" class="btn btn-outline" style="font-size:16px;padding:12px 28px;">Join Waitlist</a></div>
+          </div>
+        </div>
+
+        <div class="drop-card" style="opacity:0.6;">
+          <div class="drop-card-img" style="background:linear-gradient(135deg,#222,#333)">
+            <span style="font-size:80px">🧢</span>
+          </div>
+          <div class="drop-card-info">
+            <p class="drop-status status-sold">✕ SOLD OUT</p>
+            <h3>Gold Star Snapback</h3>
+            <p>Drop #002. Gold embroidered star. 200 unit run. Completely sold out.</p>
+            <div class="drop-meta">
+              <span class="drop-units">0 / 200 remaining</span>
+              <span style="font-family:var(--font-display);font-size:28px;color:var(--gray-light);">$44.99</span>
+            </div>
+            <div style="margin-top:16px;"><a href="#" class="btn btn-outline" style="font-size:16px;padding:12px 28px;border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.4);">Sold Out</a></div>
+          </div>
+        </div>
+
+        <div class="drop-card" style="opacity:0.6;">
+          <div class="drop-card-img" style="background:linear-gradient(135deg,#440000,#220000)">
+            <span style="font-size:80px">👕</span>
+          </div>
+          <div class="drop-card-info">
+            <p class="drop-status status-sold">✕ SOLD OUT</p>
+            <h3>Launch Day Tee — Drop #001</h3>
+            <p>The original. Sold out in 4 hours. Signed edition of 50 still available occasionally on resale.</p>
+            <div class="drop-meta">
+              <span class="drop-units">0 / 250 remaining</span>
+              <span style="font-family:var(--font-display);font-size:28px;color:var(--gray-light);">$39.99</span>
+            </div>
+            <div style="margin-top:16px;"><a href="#" class="btn btn-outline" style="font-size:16px;padding:12px 28px;border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.4);">Sold Out</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTIFY SECTION -->
+  <section class="newsletter-section">
+    <div class="container newsletter-inner">
+      <h2>Never Miss a Drop</h2>
+      <p>Get SMS + email alerts the moment a new drop goes live.</p>
+      <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit">Alert Me</button>
+      </form>
+      <p class="nl-fine">Drop alerts only. No marketing spam. Cancel anytime.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">VANCE<span>KIRK</span></a>
+        <p>Making America proud, one drop at a time.</p>
+        <div class="socials">
+          <a href="#">𝕏</a><a href="#">IG</a><a href="#">TK</a><a href="#">TS</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="shop.html">All Products</a><a href="drops.html">Exclusive Drops</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="about.html">About</a><a href="#">Shipping</a><a href="#">Returns</a>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Disclosures</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2028 VanceKirk Store. Not affiliated with official campaign.</p>
+    </div>
+  </footer>
+
+  <div class="cart-toast" id="cartToast">✓ Added to cart!</div>
+  <script src="js/main.js"></script>
+</body>
+</html>
