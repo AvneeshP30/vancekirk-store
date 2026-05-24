@@ -1100,3 +1100,15 @@ cite {
     padding-top: 120px;
   }
 }
+
+.mobile-news-section {
+  padding: 80px 24px;
+  background: #050505;
+}
+
+.mobile-news-section h2 {
+  font-family: var(--font-display);
+  color: #ff2b2b;
+  margin-bottom: 24px;
+  letter-spacing: 3px;
+}

@@ -26,7 +26,7 @@
       <a href="shop.html">Shop</a>
       <a href="drops.html">Drops</a>
       <a href="about.html">About</a>
-      <a href="/news.html" class="mobile-wire-btn">
+      <a href="#mobile-news-section" class="mobile-wire-btn">
   LIVE WIRE
 </a>
     </div>
@@ -247,6 +247,13 @@ VanceKirk 2028 tracks the culture, media, politics, and momentum shaping the nex
     </div>
   </section>
 
+  <section id="mobile-news-section" class="mobile-news-section">
+    <div class="container">
+      <h2>LIVE WIRE</h2>
+      <div id="mobile-news-feed"></div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -301,6 +308,7 @@ fetch(
   .then((res) => res.json())
   .then((data) => {
     const container = document.getElementById("news-feed");
+    const mobileContainer = document.getElementById("mobile-news-feed");
 
     container.innerHTML = "";
 
@@ -317,6 +325,7 @@ fetch(
       `;
 
       container.appendChild(item);
+      mobileContainer.appendChild(item.cloneNode(true));
     });
   })
   .catch((err) => {
