@@ -1112,3 +1112,58 @@ cite {
   margin-bottom: 24px;
   letter-spacing: 3px;
 }
+
+/* DOMAIN BUTTON */
+
+.nav-domain-btn {
+position: absolute !important;
+
+  top: 8px !important;
+  left: 300px !important;
+
+  transform: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 22px;
+
+  border: 2px solid rgba(255,255,255,0.9);
+
+  color: white;
+  text-decoration: none;
+
+  font-family: var(--font-cond);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+
+  transition: all 0.25s ease;
+}
+
+.nav-domain-btn:hover {
+  background: #ff1d1d;
+  border-color: #ff1d1d;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .nav-domain-btn {
+    position: absolute;
+
+    top: 16px !important;
+   left: 61% !important;
+transform: translateX(-58%);
+
+    padding: 8px 14px;
+
+    font-size: 11px;
+    letter-spacing: 1.5px;
+
+    z-index: 1001;
+  }
+}
