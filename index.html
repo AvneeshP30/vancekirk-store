@@ -31,6 +31,9 @@
 
   <!-- HERO -->
   <section class="hero">
+    <p class="hero-subtext">
+VanceKirk 2028 tracks the culture, media, politics, and momentum shaping the next American era.
+</p>
     <div class="floating-news">
   <div class="floating-news-header">
     2028 LIVE WIRE
@@ -304,7 +307,7 @@ fetch(
       item.className = "floating-news-item";
 
       item.innerHTML = `
-        <a href="${article.link}" target="_blank">
+        <a href="${article.link}" target="_blank" rel="nofollow">
           <h3>${article.title}</h3>
           <p>${article.author || "Politics Feed"}</p>
         </a>
