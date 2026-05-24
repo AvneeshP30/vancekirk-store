@@ -952,6 +952,17 @@ cite {
   .categories-grid { grid-template-columns: 1fr; }
   .products-grid { grid-template-columns: 1fr; }
   .shop-grid { grid-template-columns: 1fr; }
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+  }
+  .hero-subtext {
+    text-align: center;
+    padding: 0 20px;
+    max-width: 600px;
+  }
   .hero-title { font-size: 72px; }
   .drop-inner { flex-direction: column; }
   .countdown-box { min-width: unset; width: 100%; }
@@ -1077,5 +1088,15 @@ cite {
     background: transparent;
     width: 100%;
     text-align: left;
+  }
+}
+@media (max-width: 768px) {
+
+  .floating-news {
+    display: none !important;
+  }
+
+  .hero-content {
+    padding-top: 120px;
   }
 }
